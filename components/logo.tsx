@@ -8,7 +8,7 @@ export default function Logo() {
     color: 'rgb(0, 182, 127)',
   }}
 >
-  <span className="font-pacifico text-[clamp(1.5rem,4vw,2.5rem)]">se</span>
+  <span className="font-pacifico text-[clamp(1.5rem,4vw,2.5rem)] leading-none">se</span>
   <span
     className="font-poppins font-extrabold tracking-[-0.1em]"
     style={{
