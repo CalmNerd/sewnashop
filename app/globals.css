@@ -8,6 +8,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-satoshi: var(--font-satoshi);
+  --font-pacifico: var(--font-pacifico);
+  --font-poppins: var(--font-poppins);
+  --font-fabric: var(--font-fabric);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -37,6 +41,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-brand-green: var(--brand-green);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -76,6 +81,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --brand-green: #00b67f;
 }
 
 .dark {
@@ -119,4 +125,23 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  ::selection {
+    background-color: rgb(34 197 94); /* green-500 */
+    color: white;
+  }
+  ::-moz-selection {
+    background-color: rgb(34 197 94); /* green-500 for Firefox */
+    color: white;
+  }
+}
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
